@@ -10,12 +10,15 @@
   <body>
     <header></header>
     <main>
-      <div id="hero" class="relative h-screen w-screen">
+      <div id="hero" class="relative h-screen w-screen overflow-hidden">
         <div id="hero-video--container" class="absolute h-screen w-screen">
           <video id="hero-video" autoplay loop muted playsinline class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover -z-10" src="assets\videos/hero.mp4" crossorigin="anonymous" data-sampler="videoTexture"></video>
         </div>
-        <div id="hero-video--overlay" class="pointer-events-none absolute inset-0 h-full w-full bg-gradient-to-b from-sky-900/80 to-sky-800/80 mix-blend-screen z-0"></div>
-        <div class="z-10"><h1>JUNIOR.SOFTWARE.DEVELOPER</h1></div>
+        <div id="hero-video--overlay" class="backdrop-blur-sm pointer-events-none absolute inset-0 h-full w-full bg-gradient-to-b from-slate-800/60 to-sky-800/60  z-0"></div>
+        <div class="z-10 relative flex">
+          <h1 class="text-[12rem] scale-y-190  text-zinc-100 animate-(--animate-scroll) font-heading">JUNIOR.SOFTWARE.DEVELOPER.</h1>
+          <h1 class="text-[12rem] scale-y-190  text-zinc-100 animate-(--animate-scroll) font-heading">JUNIOR.SOFTWARE.DEVELOPER.</h1>
+        </div>
       </div>
     </main>
     <footer></footer>
