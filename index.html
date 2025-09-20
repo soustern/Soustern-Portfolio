@@ -5,28 +5,31 @@
     <link rel="icon" type="image/svg+xml" href="/Soustern-Portfolio/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <script type="module" crossorigin src="/Soustern-Portfolio/assets/index-2rcs7wF9.js"></script>
-    <link rel="stylesheet" crossorigin href="/Soustern-Portfolio/assets/index-CrYBktwj.css">
+    <script type="module" crossorigin src="/Soustern-Portfolio/assets/index-CSuQbuPt.js"></script>
+    <link rel="stylesheet" crossorigin href="/Soustern-Portfolio/assets/index-CxgqRedL.css">
   </head>
   <body>
     <header></header>
     <main>
       <div id="hero" class="relative h-screen w-screen">
-        <div id="hero-video--container" class="absolute inset-0">
-          <video id="hero-video" autoplay loop muted playsinline class="absolute h-full w-full object-cover" src="/Soustern-Portfolio/assets/hero-Cw_07W_b.mp4" crossorigin="anonymous" data-sampler="videoTexture"></video>
+        <div id="hero-video--container" class="absolute h-screen w-screen">
+          <video id="hero-video" autoplay loop muted playsinline class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover -z-10" src="/Soustern-Portfolio/assets/hero-B2zjaTrC.mp4" crossorigin="anonymous" data-sampler="videoTexture"></video>
         </div>
-
-        <div id="hero-video--overlay" class="pointer-events-none absolute inset-0 h-full w-full bg-gray-900/60"></div>
+        <div id="hero-video--overlay" class="pointer-events-none absolute inset-0 h-full w-full bg-gradient-to-b from-sky-900/80 to-sky-800/80 mix-blend-screen z-0"></div>
+        <div class="z-10"><h1>JUNIOR.SOFTWARE.DEVELOPER</h1></div>
       </div>
     </main>
     <footer></footer>
+    <!-- <script type="module" src="src/js/WebGl.js"></script> -->
     <style>
       #hero-video--container canvas {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
         width: 100%;
         height: 100%;
+        z-index: 0;
       }
     </style>
   </body>
