@@ -12,14 +12,16 @@
     <main>
       <div id="hero" class="relative h-screen w-screen">
         <div id="hero-video--container" class="absolute h-screen w-screen">
-          <video id="hero-video" autoplay loop muted playsinline class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover" src="assets\videos/hero.mp4" crossorigin="anonymous" data-sampler="videoTexture"></video>
+          <video id="hero-video" autoplay loop muted playsinline class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover -z-10" src="assets\videos/hero.mp4" crossorigin="anonymous" data-sampler="videoTexture"></video>
         </div>
-        <div id="hero-video--overlay" class="pointer-events-none absolute inset-0 h-full w-full bg-gray-900/60"></div>
+        <div id="hero-video--overlay" class="pointer-events-none absolute inset-0 h-full w-full bg-gradient-to-b from-sky-900/80 to-sky-800/80 mix-blend-screen z-0"></div>
+        <div class="z-10"><h1>JUNIOR.SOFTWARE.DEVELOPER</h1></div>
       </div>
     </main>
     <footer></footer>
     <script type="module" src="src\main.js"></script>
-    <script type="module" src="src\hero_video_hover.js"></script>
+    <script type="module" src="src/js/hero_video_hover.js"></script>
+    <!-- <script type="module" src="src/js/WebGl.js"></script> -->
     <style>
       #hero-video--container canvas {
         position: absolute;
@@ -28,6 +30,7 @@
         transform: translateX(-50%) translateY(-50%);
         width: 100%;
         height: 100%;
+        z-index: 0;
       }
     </style>
   </body>
