@@ -13,7 +13,7 @@ void main() {
     vec3 flow = texture2D(tFlow, vUv).rgb;
 
     // We control the strength of the mouse "brush stroke" here.
-    float mouseStrength = 0.022;
+    float mouseStrength = 0.1;
     vec2 mouseDistortion = flow.xy * mouseStrength;
     
     // 2. Create the LANGUID background distortion using smooth waves.

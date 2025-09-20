@@ -11,10 +11,9 @@
     <header></header>
     <main>
       <div id="hero" class="relative h-screen w-screen">
-        <div id="hero-video--container" class="absolute inset-0">
-          <video id="hero-video" autoplay loop muted playsinline class="absolute h-full w-full object-cover" src="assets\videos/hero.mp4" crossorigin="anonymous" data-sampler="videoTexture"></video>
+        <div id="hero-video--container" class="absolute h-screen w-screen">
+          <video id="hero-video" autoplay loop muted playsinline class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover" src="assets\videos/hero.mp4" crossorigin="anonymous" data-sampler="videoTexture"></video>
         </div>
-
         <div id="hero-video--overlay" class="pointer-events-none absolute inset-0 h-full w-full bg-gray-900/60"></div>
       </div>
     </main>
@@ -24,8 +23,9 @@
     <style>
       #hero-video--container canvas {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
         width: 100%;
         height: 100%;
       }
