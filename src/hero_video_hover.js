@@ -21,8 +21,8 @@ async function loadShader(url)
     return response.text();
 }
 
-const vertexShader = await loadShader("./shaders/vertexShader.glsl");
-const fragmentShader = await loadShader("./shaders/fragmentShader.glsl");
+const vertexShader = await loadShader("shaders/vertexShader.glsl");
+const fragmentShader = await loadShader("shaders/fragmentShader.glsl");
 
 const _size = [2000, 2500];
 
