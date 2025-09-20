@@ -7,8 +7,8 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: 'shaders/*', // pasta onde estão seus .glsl
-          dest: 'shaders'       // pasta de destino dentro de dist/
+          src: 'shaders/*', 
+          dest: 'shaders'       
         }
       ]
     })
