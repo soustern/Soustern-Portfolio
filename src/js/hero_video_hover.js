@@ -185,7 +185,6 @@ function update(t) {
         scene: scene,
     });
 
-    console.log("rendered");
 };
 
 requestAnimationFrame(update);

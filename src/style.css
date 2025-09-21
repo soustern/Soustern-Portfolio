@@ -18,9 +18,18 @@
   --font-accent: FiraCode, sans-serif;
   
   --animate-scroll: scroll 30s linear infinite;
+  --animate-upDown: upDown 1s alternate infinite ease-in-out;
   @keyframes scroll {
     to {
         transform: translateX(-100%);
+    }  
+  };
+  @keyframes upDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
     }
   }
 }
@@ -33,4 +42,8 @@
 .custom-pattern {
 	background-image: linear-gradient(#e5e5e50a 2px, transparent 2px), linear-gradient(to right, #e5e5e50a 2px, transparent 2px);
 	background-size: 200px 200px;
+}
+
+.clipped-element {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 2% 2%, 2% 98%, 98% 98%, 98% 2%, 2% 2%);
 }
