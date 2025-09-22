@@ -16,6 +16,12 @@ function randomNumberInRange(min, max) {
     return Math.random() * (max - min) + min;
 };
 
+// add CHROMATIC ABERRATION TO SHADER BACGROUND
+// ADD RADIAL OPACITY TO WHITE SQUARES ON THE BACKGROUND AND MAYBE ADD CHROMATIC ABETTATION AS WELL
+// ADD CHROMATIC ABERRATION TO THE HERO TEXT
+// ADD ELEMENTS THAT SLIGHT MOVE WITH MOUSE MOVEMENT
+
+
 function setCoordinates(heroCoordinates, counter)
 {
     counter.style.top = `${randomNumberInRange(0, heroCoordinates.height)}px`;
