@@ -19,6 +19,7 @@
   
   --animate-scroll: scroll 30s linear infinite;
   --animate-upDown: upDown 1s alternate infinite ease-in-out;
+  --animate-glowUpTypewriter: glowUpTypewriter 0.6s ease-in-out forwards;
   @keyframes scroll {
     to {
         transform: translateX(-100%);
@@ -31,7 +32,24 @@
     100% {
         transform: translateY(100%);
     }
-  }
+  };
+  @keyframes glowUpTypewriter {
+    0% {
+      transform: scale(100%);
+      filter: drop-shadow(0 0 10px rgba(255,255,255,0.8));
+      opacity: 0%;
+    }
+    50% {
+      transform: scale(110%);
+      filter: drop-shadow(0 0 20px rgba(255,255,255,1));
+      opacity: 30%;
+    }
+    100% {
+      transform: scale(100%);
+      filter: drop-shadow(0 0 10px rgba(255,255,255,0.8));
+      opacity: 30%;
+    }
+  };
 }
 
 /*
