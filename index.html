@@ -14,52 +14,60 @@
     <!-- <meta property="og:image" content="https://www.rafaelantoniassi.com/images/og-image.jpg" /> -->
     <meta property="og:description" content="Check out my portfolio to see my latest projects in web development." />
   </head>
-  <body>
-    <header></header>
+  <body class="">
+    <header>
+      <div class="fixed flex align-middle justify-center w-screen h-15 z-50 bg-sky-300 py-8 px-20">
+        <nav class="relative flex justify-between align-middle h-full w-full">
+          <button class="text-slate-300 text-xl py-2 px-10 block">Menu</button>
+          <button class="text-slate-300 text-xl py-2 px-10 block">Languages</button>
+        </nav>
+      </div>
+    </header>
     <main>
       <div id="hero" class="relative h-screen w-screen overflow-hidden">
-          <div id="hero-video--container" class="absolute h-screen w-screen">
-            <video id="hero-video" autoplay loop muted playsinline class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover -z-10" src="assets\videos/hero.mp4" crossorigin="anonymous" data-sampler="videoTexture"></video>
+          <div id="hero-video--container" class="absolute h-full w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-md">
+            <video id="hero-video" autoplay loop muted playsinline class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover -z-10 rounded-full" src="assets\videos/hero.mp4" crossorigin="anonymous" data-sampler="videoTexture"></video>
           </div>
-          <div id="hero-video--overlay" class="backdrop-blur-sm pointer-events-none absolute inset-0 h-full w-full bg-slate-900/60 custom-pattern z-0"></div>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
-          <p class="absolute z-0 text-indigo-300 stack-paragraph text-xl pointer-events-none"></p>
+          <div id="hero-video--overlay" class="m-auto rounded-lg backdrop-blur-md pointer-events-none absolute inset-0 h-full w-full bg-slate-900/60 custom-pattern z-0">
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+          </div>
           <div class="pt-30 pointer-events-none flex flex-col items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div class="z-10 relative flex pointer-events-non">
               <h1 class="flex items-end text-[13rem] leading-none text-slate-300 font-heading font-black animate-(--animate-scroll)">
-                <span class="inline-block origin-bottom transform scale-y-[2.3] ">RAFAEL</span>
-                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 translate-x-2 text-sky-800">.</span>
+                <span class="inline-block origin-bottom transform scale-y-[2.3]">RAFAEL</span>
+                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 translate-x-2 text-yellow-500">.</span>
                 <span class="inline-block origin-bottom transform scale-y-[2.3] ml-6">ANTONIASSI</span>
-                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 text-sky-800">.</span>
+                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 text-yellow-500">.</span>
               </h1>
               <h1 class="flex items-end text-[13rem] leading-none text-slate-300 font-heading font-black animate-(--animate-scroll)">
                 <span class="inline-block origin-bottom transform scale-y-[2.3] ">RAFAEL</span>
-                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 translate-x-2 text-sky-800">.</span>
+                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 translate-x-2 text-yellow-500">.</span>
                 <span class="inline-block origin-bottom transform scale-y-[2.3] ml-6">ANTONIASSI</span>
-                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 text-sky-800">.</span>
+                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 text-yellow-500">.</span>
               </h1>
               <h1 class="flex items-end text-[13rem] leading-none text-slate-300 font-heading font-black animate-(--animate-scroll)">
                 <span class="inline-block origin-bottom transform scale-y-[2.3] ">RAFAEL</span>
-                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 translate-x-2 text-sky-800">.</span>
+                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 translate-x-2 text-yellow-500">.</span>
                 <span class="inline-block origin-bottom transform scale-y-[2.3] ml-6">ANTONIASSI</span>
-                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 text-sky-800">.</span>
+                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 text-yellow-500">.</span>
               </h1>
               <h1 class="flex items-end text-[13rem] leading-none text-slate-300 font-heading font-black animate-(--animate-scroll)">
                 <span class="inline-block origin-bottom transform scale-y-[2.3] ">RAFAEL</span>
-                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 translate-x-2 text-sky-800">.</span>
+                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 translate-x-2 text-yellow-500">.</span>
                 <span class="inline-block origin-bottom transform scale-y-[2.3] ml-6">ANTONIASSI</span>
-                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 text-sky-800">.</span>
+                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-10 text-yellow-500">.</span>
               </h1>
          
             </div>
@@ -100,6 +108,7 @@
         width: 100%;
         height: 100%;
         z-index: 0;
+        border-radius: 0.5rem;
       }
     </style>
   </body>

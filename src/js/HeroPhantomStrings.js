@@ -2,7 +2,7 @@
 const stack = ["HTML", "CSS", "JavaScript", "TypeScript", "Sass", "Tailwind", "React", "Vue.", "Angular", "Svelte", "Redux", "Webpack", "Jest", "Vite", "Cypress", "REST API", "GraphQL", "React Query", "Git", "Vercel", "npm", "Yarn", "Next", ".NET", "ASP.NET", "Blazor", "C#", "F#", "Entity Framework Core", "Windows Forms", "Xamarin", "Visual Studio", "Visual Studio Code", "Azure", "SQL Server", "IIS", "NuGet", "ML.NET", "Python", "C++", "C", "React Native", "Flutter", "Dart"];
 
 document.addEventListener("DOMContentLoaded", () => {
-    const hero = document.querySelector('#hero');
+    const hero = document.querySelector('#hero-video--overlay');
     let heroCoordinates = hero.getBoundingClientRect();
 
     window.addEventListener("resize", () => {
@@ -43,8 +43,8 @@ function setCoordinates(heroCoordinates, stackParagraph)
         setTimeout(() => {
             stackParagraph.innerHTML = ``;
 
-            stackParagraph.style.top = `${randomNumberInRange(0, heroCoordinates.height)}px`;
-            stackParagraph.style.left = `${randomNumberInRange(0, heroCoordinates.width)}px`;
+            stackParagraph.style.top = `${biasedRandomNumberInRange(0, heroCoordinates.height)}px`;
+            stackParagraph.style.left = `${biasedRandomNumberInRange(0, heroCoordinates.width)}px`;
 
             const word = stack[Math.round(randomNumberInRange(0, stack.length - 1))];
             [...word].forEach((letter, index) => {
@@ -67,7 +67,7 @@ function setCoordinates(heroCoordinates, stackParagraph)
 function animateText(span, duration, animation) {
     setTimeout(() => {
         span.classList.add(animation);
-        span.style.opacity = `.12`;
+        span.style.opacity = `.10`;
         span.style.filter = `drop-shadow(0 0 10px rgba(255,255,255,0.8))`;
     }, duration);
 };
@@ -81,6 +81,15 @@ function randomNumberInRange(min, max) {
     return Math.random() * (max - min) + min;
 };
 
-function randomNumberInBiased(min, max) {
-    return Math.random() * (max - min) + min;
-};
+function biasedRandomNumberInRange(min, max) {
+
+    const range = max - min;
+
+    if (Math.random() < 0.5) {
+        const lower_bound = min + (range * 0.25);
+        return randomNumberInRange(min, lower_bound);
+    } else {
+        const upper_bound = max - (range * 0.25);
+        return randomNumberInRange(upper_bound, max);
+    }
+}
