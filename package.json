@@ -19,6 +19,7 @@
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
     "@tailwindcss/vite": "^4.1.13",
+    "gsap": "^3.13.0",
     "ogl": "^1.0.11",
     "tailwindcss": "^4.1.13",
     "three": "^0.180.0"

@@ -15,44 +15,56 @@
     <meta property="og:description" content="Check out my portfolio to see my latest projects in web development." />
   </head>
   <body class="">
-    <header>
+    <header class="pointer-events-none">
       <div class="fixed left-0 w-full p-15 z-20">
-        <nav class="relative flex align-middle justify-center h-15 w-full border-b-2">
-          <button class="text-slate-300 text-xl absolute h-full top-0 left-0  border-2 block">Menu</button>
-          <button class="text-slate-300 text-xl py-2 px-10">Languages</button>
+        <nav class="relative flex align-middle justify-center h-10 w-full border-b-1 border-[#f8fafc45]">
+          <button class="side-trigger pointer-events-auto text-slate-300 absolute h-full top-0 left-0  border-1 px-3 rounded-tl-md border-[#f8fafc45] hover:border-[#f8fafc] border-opacity-2 font-accent ">
+            <div class="flex flex-col gap-1">
+              <div class="bg-[#f8fafc] h-[1px] w-8 rounded-full"></div>
+              <div class="bg-[#f8fafc] h-[1px] w-5 rounded-full"></div>
+            </div>
+          </button>
+          <button class="text-slate-300 text-sm py-2 px-10 font-accent font-light">Home</button>
+          <button class="text-slate-300 text-sm py-2 px-10 font-accent font-light">About</button>
+          <button class="text-slate-300 text-sm py-2 px-10 font-accent font-light">Projects</button>
         </nav>
+        <div class="side h-screen flex pb-35">
+          <div class="side-border h-full border-l-2 border-[#f8fafc45] rounded"></div>
+          <div class="side-overlay h-full w-full fixed top-0 left-0 bg-slate-200/30 rounded-lr-md opacity-0"></div>
+          <div class="side-pannel h-[107%] w-0 bg-slate-50 transfomr -translate-y-20 backdrop-blur-[5px] rounded-md pointer-events-auto"></div>
+        </div>
       </div>
     </header>
     <main>
       <div id="hero" class="relative h-screen w-screen overflow-hidden">
           <div id="hero-video--container" class="absolute h-full w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-md">
-            <video id="hero-video" autoplay loop muted playsinline class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover -z-10 rounded-full" src="assets\videos/hero.mp4" crossorigin="anonymous" data-sampler="videoTexture"></video>
+            <video id="hero-video" autoplay loop muted playsinline class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover -z-10" src="assets\videos/hero.mp4" crossorigin="anonymous" data-sampler="videoTexture"></video>
           </div>
           <div id="hero-video--overlay" class="m-auto rounded-lg backdrop-blur-md pointer-events-none absolute inset-0 h-full w-full bg-slate-900/60 custom-pattern z-0">
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
-            <p class="absolute z-0 text-slate-300 stack-paragraph text-xl pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
+            <p class="absolute z-0 text-slate-300 stack-paragraph text-md pointer-events-none"></p>
           </div>
-          <div class="pointer-events-none flex flex-col items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div class="z-10 relative flex pointer-events-non">
-              <h1 class="flex items-end text-[12rem] leading-none text-slate-300 font-heading font-semibold">
-                <span class="inline-block origin-bottom transform scale-y-[1.2]">Rafael</span>
-                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-9 translate-x-2 bg-yellow-500 h-6 w-6"></span>
-                <span class="inline-block origin-bottom transform scale-y-[1.2] ml-6">Antoniassi</span>
-                <span class="inline-block origin-bottom transform scale-y-[1] -translate-y-9 translate-x-2 bg-yellow-500 h-6 w-6"></span>
+          <div class="pointer-events-none flex flex-col items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-5">
+            <div class="z-10 relative flex pointer-events-none">
+              <h1 class="flex items-end text-[12rem] leading-none text-slate-200 font-heading font-semibold">
+                <span class="transform scale-y-[1.2]">Rafael</span>
+                <span class="transform scale-y-[1] -translate-y-5 translate-x-2 bg-yellow-500 h-6 w-6"></span>
+                <span class="transform scale-y-[1.2] ml-6">Antoniassi</span>
+                <span class="transform scale-y-[1] -translate-y-5 translate-x-2 bg-yellow-500 h-6 w-6"></span>
               </h1>
             </div>
             <div id="z-10 card-can-hover" class="pointer-events-auto flex group card-can-hover m-auto relative z-10 rounded-lg bg-zinc-50/7  w-fit before:content-[''] before:absolute before:inset-0 before:bg-[radial-gradient(600px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.05),transparent_40%)] before:opacity-0 before:transition before:duration-200 hover:before:opacity-100 before:z-20 before:rounded-lg">
@@ -71,7 +83,7 @@
                 <p class="text-3xl font-accent text-slate-50"> /<span class="ml-0.5"></span>&gt;</p>
               </div>
             </div>
-            <div class="mt-8 rounded-4xl relative  w-6 h-12 border-1 border-slate-300 m-auto z-15 p-1.5">
+            <div class="rounded-4xl relative  w-6 h-12 border-1 border-slate-300 m-auto z-15 p-1.5">
               <div class="absolute top-1/2 left-1/2 transform -translate-1/2 rounded-full bg-yellow-500 h-2.5 w-2.5 animate-upDown"></div>
             </div>
           </div>
@@ -82,6 +94,7 @@
     <script type="module" src="src/js/hero_video_hover.js"></script>
     <script type="module" src="src/js/CardHoverEffect.js"></script>
     <script type="module" src="src/js/HeroPhantomStrings.js"></script>
+    <script type="module" src="src/js/SidePannel.js"></script>
     <!-- <script type="module" src="src/js/WebGl.js"></script> -->
     <style>
       #hero-video--container canvas {

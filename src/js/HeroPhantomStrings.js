@@ -1,6 +1,7 @@
 
 const stack = ["HTML", "CSS", "JavaScript", "TypeScript", "Sass", "Tailwind", "React", "Vue.", "Angular", "Svelte", "Redux", "Webpack", "Jest", "Vite", "Cypress", "REST API", "GraphQL", "React Query", "Git", "Vercel", "npm", "Yarn", "Next", ".NET", "ASP.NET", "Blazor", "C#", "F#", "Entity Framework Core", "Windows Forms", "Xamarin", "Visual Studio", "Visual Studio Code", "Azure", "SQL Server", "IIS", "NuGet", "ML.NET", "Python", "C++", "C", "React Native", "Flutter", "Dart"];
 
+
 document.addEventListener("DOMContentLoaded", () => {
     const hero = document.querySelector('#hero-video--overlay');
     let heroCoordinates = hero.getBoundingClientRect();
@@ -26,7 +27,6 @@ function setCoordinates(heroCoordinates, stackParagraph)
             for (const paragraph of paragraphs) {
                 let wordCheck = ``;
                 const spans = paragraph.querySelectorAll(`span`);
-                console.log(paragraph);
                 spans.forEach(span => {
                     wordCheck += span.textContent;
                     if (wordCheck === currentWord) {
@@ -67,7 +67,7 @@ function setCoordinates(heroCoordinates, stackParagraph)
 function animateText(span, duration, animation) {
     setTimeout(() => {
         span.classList.add(animation);
-        span.style.opacity = `.12`;
+        span.style.opacity = `.10`;
         span.style.filter = `drop-shadow(0 0 10px rgba(255,255,255,0.8))`;
     }, duration);
 };
