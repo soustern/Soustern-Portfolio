@@ -8,13 +8,25 @@
 }
 @font-face {
   font-family: FiraCode;
-  src: url("../assets/fonts/FiraCode-VariableFont_wght.ttf");
+  src: url("../assets/fonts/FiraCode.ttf");
+}
+@font-face {
+  font-family: AudiowideRegular;
+  src: url("../assets/fonts/Audiowide-Regular.ttf");
+}
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: DMSans;
+  src: url("../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf");
 }
 @import "tailwindcss";
 
 @theme {
   --font-body: Rubik, sans-serif;
-  --font-heading: Assistant, sans-serif;
+  --font-heading: DMSans, sans-serif;
   --font-accent: FiraCode, sans-serif;
   
   --animate-scroll: scroll 40s linear infinite;
@@ -43,19 +55,19 @@
     50% {
       transform: scale(100%);
       filter: drop-shadow(0 0 15px rgba(255,255,255,1));
-      opacity: 10%;
+      opacity: 12%;
     }
     100% {
       transform: scale(100%);
       filter: drop-shadow(0 0 5px rgba(255,255,255,0.8));
-      opacity: 10%;
+      opacity: 12%;
     }
   };
   @keyframes glowDownTypewriter {
     0% {
       transform: scale(100%);
       filter: drop-shadow(0 0 10px rgba(255,255,255,0.8));
-      opacity: 10%;
+      opacity: 12%;
     }
     100% {
       transform: scale(90%);

@@ -43,8 +43,8 @@ function setCoordinates(heroCoordinates, stackParagraph)
         setTimeout(() => {
             stackParagraph.innerHTML = ``;
 
-            stackParagraph.style.top = `${biasedRandomNumberInRange(0, heroCoordinates.height)}px`;
-            stackParagraph.style.left = `${biasedRandomNumberInRange(0, heroCoordinates.width)}px`;
+            stackParagraph.style.top = `${randomNumberInRange(0, heroCoordinates.height)}px`;
+            stackParagraph.style.left = `${randomNumberInRange(0, heroCoordinates.width)}px`;
 
             const word = stack[Math.round(randomNumberInRange(0, stack.length - 1))];
             [...word].forEach((letter, index) => {
@@ -67,7 +67,7 @@ function setCoordinates(heroCoordinates, stackParagraph)
 function animateText(span, duration, animation) {
     setTimeout(() => {
         span.classList.add(animation);
-        span.style.opacity = `.10`;
+        span.style.opacity = `.12`;
         span.style.filter = `drop-shadow(0 0 10px rgba(255,255,255,0.8))`;
     }, duration);
 };
