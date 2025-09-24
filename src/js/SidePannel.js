@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const sidePannel = document.querySelector(`.side-pannel`);
     const sideTrigger = document.querySelector(`.side-trigger`);
 
+    // CHANGE SIDE PANNEL HEIGHT TO FIT
+
     sideTrigger.addEventListener(`click`, () => {
        sideOverlay.classList.toggle(`opacity-0`); 
        sideOverlay.classList.toggle(`pointer-events-auto`); 

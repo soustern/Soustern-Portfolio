@@ -33,8 +33,8 @@
   --animate-upDown: upDown 1s alternate infinite ease-in-out;
   --animate-glowUpTypewriter: glowUpTypewriter 0.5s ease-in-out forwards;
   --animate-glowDownTypewriter: glowDownTypewriter 0.5s ease-in-out forwards;
-  --animate-sidePanelAppear: sidePanelAppear 0.5s ease-out forwards;
-  --animate-sidePanelDisappear: sidePanelDisappear 0.5s ease-in forwards;
+  --animate-sidePanelAppear: sidePanelAppear 0.4s cubic-bezier( 0.74, 0.12, 0.33, 0.85 ) forwards;
+  --animate-sidePanelDisappear: sidePanelDisappear 0.4s cubic-bezier( 0.74, 0.12, 0.33, 0.85 ) forwards;
 
 
   @keyframes scroll {
